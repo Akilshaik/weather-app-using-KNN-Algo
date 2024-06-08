@@ -54,7 +54,7 @@ The k-Nearest Neighbors (k-NN) algorithm is a versatile and intuitive machine le
 
 ### Output
 
-![Output](./images/output-screenshot.png)
+![Output](./images/Screenshot-2024-04-24-093802.png)
 
 ## How to Run the Project
 
