@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Weather Predictor using KNN Algorithm
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project involves building a weather prediction application using the k-Nearest Neighbors (k-NN) algorithm. The application allows users to input weather parameters for a specific city and predicts the weather condition based on the k-NN algorithm.
 
-In the project directory, you can run:
+## Project Details
 
-### `npm start`
+### Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The project is built as a React application utilizing the k-NN algorithm to predict weather conditions.
+- Users can input parameters such as temperature, humidity, and wind speed for a particular city.
+- The application calculates the nearest neighbors based on the input parameters and predicts the weather condition.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technology
 
-### `npm test`
+- The application is built using **React**, a popular JavaScript library for building user interfaces.
+- **CSS** is used for styling components and providing a user-friendly interface.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Algorithm Description
 
-### `npm run build`
+The k-Nearest Neighbors (k-NN) algorithm is a versatile and intuitive machine learning technique used for both classification and regression tasks. Here's a more detailed breakdown of how the algorithm works:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Initialization**:  
+   The algorithm begins by loading the dataset containing examples with their corresponding labels. Each example represents a data point in a multidimensional feature space.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Choose the Number of Neighbors (k)**:  
+   The value of k is a crucial parameter in k-NN, representing the number of nearest neighbors to consider when making predictions. The choice of k influences the bias-variance tradeoff. Smaller values of k lead to more flexible models with high variance but low bias, while larger values of k result in smoother decision boundaries with low variance but high bias.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Calculate Distance**:  
+   For each query instance, the algorithm calculates the distance between the query instance and all the instances in the dataset. The distance metric used is typically Euclidean distance, although other distance metrics such as Manhattan distance or Minkowski distance can also be employed depending on the nature of the data.
 
-### `npm run eject`
+4. **Find Nearest Neighbors**:  
+   Once distances are calculated, the algorithm identifies the k instances with the smallest distances to the query instance. These instances constitute the nearest neighbors of the query instance and are used to make predictions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Determine Majority Vote (Classification) / Calculate Average (Regression)**:  
+   - For classification problems, the algorithm determines the class labels of the k nearest neighbors and performs a majority vote to decide the class label of the query instance.
+   - In regression problems, the algorithm calculates the average of the target values (e.g., temperature, humidity) of the k nearest neighbors.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. **Output Result**:  
+   Finally, the algorithm outputs the predicted class label (for classification) or the predicted value (for regression) for the query instance.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### UI Design Details
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- The UI includes input fields for users to enter the city name, temperature, humidity, and wind speed.
+- There's a button to trigger the prediction process and display the predicted weather condition.
+- Additional buttons allow users to navigate between pages, such as returning to the home page or viewing algorithm steps.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Home Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Home Page](./images/homepage-screenshot.png)
 
-### Code Splitting
+### Output
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Output](./images/output-screenshot.png)
 
-### Analyzing the Bundle Size
+## How to Run the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the Repository**:
+   ```sh
+   git clone https://github.com/yourusername/weather-predictor-knn.git
+   cd weather-predictor-knn
