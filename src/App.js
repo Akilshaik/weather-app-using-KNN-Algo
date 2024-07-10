@@ -2,7 +2,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, BrowserRouter, Routes } from 'react-router-dom';
 
-
 import WeatherPage from './components/weatherPage';
 import Home from './components/Home';
 import Steps from './components/steps';
