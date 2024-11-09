@@ -55,7 +55,7 @@ function Home() {
           We made an simple application of Weather prediction, Here we implement
           K-NN and show how to actual this Algorithm Works.
         </p>
-        <button className="button" onClick={weatherLoad}> Open </button>
+        <button className="button" onClick={weatherLoad}> Home </button>
       </section>
       <footer>
         <p></p>

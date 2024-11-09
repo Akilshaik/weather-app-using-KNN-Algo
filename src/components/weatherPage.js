@@ -101,12 +101,12 @@ const handleInputChange = (event) => {
     
     <div>
         <header>
-        <h1>Weather App</h1>
+        <h1>SkyCast</h1>
       </header>
     <div className={styles.container}>
         
       <div className={styles.heading}>
-        <h1>Weather Prediction using KNN Algorithm</h1>
+        <h1>Weather</h1>
       </div>
       <div className={styles.form}>
         <div>
@@ -135,7 +135,7 @@ const handleInputChange = (event) => {
     </div>
     <footer>
     <div className={styles.btnh}>
-        <div><button onClick={() => window.location.href = '/Home'}>Home</button></div>
+        <div><button onClick={() => window.location.href = '/Home'}>What is KNN</button></div>
         </div>
 
       </footer>

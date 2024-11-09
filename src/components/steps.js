@@ -34,7 +34,7 @@ function Steps() {
         </div>
       </div>
       <div className="footer">
-        <p></p>
+        <p><button className="button" onClick={() => window.location.href = '/WeatherPage'}> Home </button></p>
       </div>
     </div>
   );
