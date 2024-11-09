@@ -1,4 +1,4 @@
-# SkyCask
+# SkyCast
 
 ## Overview
 
