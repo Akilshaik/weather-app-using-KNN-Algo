@@ -1,4 +1,4 @@
-# Weather Predictor using KNN Algorithm
+# SkyCask
 
 ## Overview
 
@@ -60,5 +60,5 @@ The k-Nearest Neighbors (k-NN) algorithm is a versatile and intuitive machine le
 
 1. **Clone the Repository**:
    ```sh
-   git clone https://github.com/yourusername/weather-predictor-knn.git
-   cd weather-predictor-knn
+   git clone https://github.com/yourusername/SkyCastn.git
+   cd SkyCast
